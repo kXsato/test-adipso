@@ -1,0 +1,127 @@
+h1,
+h2 {
+    margin: 0;
+    text-align: center;
+}
+h1 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+h2 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+.header-title {
+    margin-bottom: 4rem;
+}
+
+.content {
+    position: relative;
+}
+.content > img {
+    position: absolute;
+    top: -2rem;
+    left: -8rem;
+    width: 24rem;
+}
+.content .first-section {
+    display: flex;
+    justify-content: flex-end;
+}
+.content .second-section {
+    background-color: var(--primary);
+    color: var(--on-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 2rem;
+}
+.content .second-section p {
+    font-size: 0.6rem;
+}
+.content form input {
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-right: 4px;
+}
+.content form button {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    main > section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        display: none;
+    }
+
+    .header-title,
+    .second-section {
+        padding: 0 1.5rem;
+    }
+    .header-title {
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .content > img {
+        left: unset;
+        top: 14px;
+        right: 0rem;
+        width: 16rem;
+    }
+    .content .first-section {
+        justify-content: flex-start;
+    }
+    .content .first-section > p {
+        width: 10rem;
+        margin-bottom: 2rem;
+        padding-left: 1.5rem;
+    }
+    .content .second-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+    }
+    .content .second-section p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .content form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .content form button,
+    .content form input {
+        width: 100%;
+        margin-bottom: 0.6rem;
+    }
+
+    footer {
+        display: none;
+    }
+}
